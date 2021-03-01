@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2 {
+    font-family: "Playfair Display", serif;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+.nav-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    background-color: #1C2833;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+}
+
+.nav-flex a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-flex .item {
+    padding: 20px 15px;
+    margin: 10px;
+}
+
+.main-button:hover {
+    background-color: #786432;
+    color:  white;
+}
+
+.main-button {
+    border-radius: 30px;
+    background: #d39c01;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.introduction {
+    margin-top: 82px;
+    background-image: url("sources/header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.introduction h1 {
+    font-size: 4rem;
+    color: #1C2833;
+    max-width: 800px;
+    margin: 62px;
+    padding-top: 220px;
+}
+
+/*PROJECTS */
+
+.box1 {
+    background-image: url(sources/tenerife.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-basis: 40%;
+}
+
+.box2 {
+    background-image: url(sources/advent.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-basis: 60%;
+}
+
+.box3  {
+    background-image: url(sources/question.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-basis: 60%;
+}
+
+.box4 {
+    background-image: url(sources/spain.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-basis: 40%;
+}
+
+.projects-case {
+    display: flex;
+
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+
+ 
+
+/* TEAM */
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team .team-mate {
+    width: 250px;
+    display: flex;
+    align-items: flex-end;
+    flex-grow: 1;
+}
+
+.ceo {
+    background-image: url(sources/ce.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.art-director {
+    background-image: url(sources/petr.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lead-designer1 {
+    background-image: url(sources/al.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lead-designer2 {
+    background-image: url(sources/anna.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lead-web-developer {
+    background-image: url(sources/web-develop.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.case {
+    border: 2px solid white;
+    min-height: 300px;
+    display: flex;
+    align-items: flex-end;
+}
+
+h4 {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.description {
+    background-color: rgba(28, 40, 51, 0.85);
+    color: white;
+    width: 100%;
+    height: 110px;
+    margin: 0;
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.description:hover {
+    background-color: #d39c01;
+}
+
+.team-mate {
+    width: 250px;
+    height: 500px;
+    display: flex;
+}
+
+/* CONTACTS */
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact--column {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact--column adress,
+.contact--column a {
+    margin: 16px 0;
+}
+
+.contact--map {
+    width: 508px;
+    height: auto;
+}
+
+.contacts, 
+.projects {
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+/* FOOTER */
+
+.footer {
+    text-align: center;
+    background-color: #1C2833;
+    color: white;
+}
+
+.footer div {
+    padding: 20px;
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 1000px) {
+    .contacts {
+        flex-direction: column;
+    }    
+}
